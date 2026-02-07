@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lunari Games | Cyber Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0b0b26, #000);
+      color: #00ffe1;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .scanlines::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 1px,
+        transparent 2px,
+        transparent 4px
+      );
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      color: #ff00ff;
+      text-shadow: 0 0 15px #ff00ff, 0 0 40px #ff00ff;
+      animation: glitch 2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 #00ffe1, -2px 0 #ff00ff; }
+      50% { text-shadow: -2px 0 #00ffe1, 2px 0 #ff00ff; }
+      100% { text-shadow: 2px 0 #00ffe1, -2px 0 #ff00ff; }
+    }
+
+    .subtitle {
+      margin-top: 15px;
+      color: #c9fff6;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px solid #00ffe1;
+      box-shadow: 0 0 25px rgba(0,255,225,0.35);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      color: #00ffe1;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      line-height: 1.7;
+      color: #d7fff9;
+    }
+
+    .warning {
+      color: #ff5c5c;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .discord-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 40px;
+      color: #000;
+      background: linear-gradient(90deg, #00ffe1, #ff00ff);
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 25px #00ffe1;
+      transition: 0.3s;
+    }
+
+    .discord-btn:hover {
+      box-shadow: 0 0 45px #ff00ff;
+      transform: scale(1.06);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body class="scanlines">
+
+  <header>
+    <h1>LUNARI GAMES</h1>
+    <div class="subtitle">Discord • APKs • Emulação • Animes • Tech fora do padrão</div>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🌌 O que é a Lunari Games?</h2>
+      <p>
+        <strong>Lunari Games</strong> é um servidor no Discord focado em
+        <strong>APKs úteis, aplicativos alternativos e ferramentas que não existem na Play Store</strong>.
+        Também somos um ponto de encontro pra quem curte <strong>emulação de consoles</strong>,
+        tecnologia underground e cultura geek no geral.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🎮 Emuladores de consoles</h2>
+      <p>
+        Aqui você encontra e discute emuladores de:
+        <br><br>
+        • Nintendo Switch  
+        • Xbox 360  
+        • PlayStation 2 (PS2)  
+        • Game Boy Advance (GBA)  
+        • Outros consoles clássicos e modernos
+        <br><br>
+        Sempre com foco em desempenho real, compatibilidade e experiências que funcionam de verdade.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>📺 Notificações de animes</h2>
+      <p>
+        A Lunari Games também tem <strong>notificações de animes</strong>.
+        <br><br>
+        • Aviso de episódios novos  
+        • Lançamentos da temporada  
+        • Animes populares e pedidos da comunidade  
+        • Organização por canais
+        <br><br>
+        Você pode sugerir animes e receber alertas direto no Discord, sem perder lançamento nenhum.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>💬 Canal de opiniões</h2>
+      <p>
+        Quer um emulador específico?  
+        Um APK diferente?  
+        Ou notificações de um anime que você acompanha?
+        <br><br>
+        No canal de <strong>opiniões</strong>, a comunidade pede, sugere e discute.
+        A Lunari avalia e adiciona o que realmente vale a pena.
+      </p>
+
+      <p class="warning">
+        ⚠️ Aviso: APKs, emuladores e ferramentas são testados, mas o uso é responsabilidade do usuário.
+        Informação é liberdade — usar sem noção é pedir dor de cabeça.
+      </p>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h2>🚀 Entrar na Lunari Games</h2>
+      <p>
+        Conecte-se ao submundo gamer, tech e anime.
+      </p>
+
+      <a class="discord-btn" href="https://discord.gg/FagEyzwFsT" target="_blank">
+        ENTRAR NO DISCORD
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    Lunari Games © 2077 | Jogar, emular e assistir sem perder nada.
+  </footer>
+
+</body>
+</html>
